@@ -29,12 +29,12 @@ yo @microsoft/sharepoint
 7. If using Vite, modify /vite.config.ts to set the output directory by adding the following **build** and **assetsDir** options:
 ```javascript
 export default defineConfig({
-	  plugins: [vue()],
-	  build: {
-	    outDir: "webpart/src/webparts/assets"
-	  },
-	  assetsDir: "appcode"
-	})
+	plugins: [vue()],
+	build: {
+    	  	outDir: "webpart/src/webparts/assets",
+		assetsDir: "appcode"
+	}
+})
 ```
 8. Modify /index.html to use a more specific app ID (rather than just #app):
 ```html
